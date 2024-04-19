@@ -11,7 +11,7 @@ tmdb_key = os.getenv('TMDB_KEY')
 
 movie = Movie()
 tmdb = TMDb()
-tmdb.api_key = '----'
+tmdb.api_key = tmdb_key
 tmdb.language = 'ko-KR'
 
 def get_recommendations(title):
