@@ -1,6 +1,13 @@
 import pickle
 import streamlit as st
 from tmdbv3api import Movie, TMDb
+from dotenv import load_dotenv
+import os
+
+# .env file load
+load_dotenv()
+
+tmdb_key = os.getenv('TMDB_KEY')
 
 movie = Movie()
 tmdb = TMDb()
